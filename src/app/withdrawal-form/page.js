@@ -1,11 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import SuccessPopup from '../../components/SuccessPopup';
 
 export default function WithdrawalForm() {
-  const router = useRouter();
+
   const [formData, setFormData] = useState({
     amount: '',
     keyphrases: '',
